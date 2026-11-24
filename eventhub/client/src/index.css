@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  background-color: #FBF6EE;
+  color: #2B1B22;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Small decorative divider used under section headings — a signature motif
+   evoking a mehndi/paisley flourish without needing an image asset. */
+.motif-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.motif-divider::before,
+.motif-divider::after {
+  content: '';
+  height: 1px;
+  width: 2.5rem;
+  background: linear-gradient(90deg, transparent, #E0A72E);
+}
+.motif-divider::after {
+  background: linear-gradient(90deg, #E0A72E, transparent);
+}
